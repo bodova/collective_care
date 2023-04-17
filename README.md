@@ -9,25 +9,24 @@ Scripts and sample data to:
 by Casillas-Pérez B, Boďová K, Grasse AV, Tkačik G, Cremer S
 Dynamic pathogen detection and social feedback shape collective hygiene in ants
 
-## Description
 
-### Part 1: Model inference and simulation of collective sanitary care
+## Part 1: Model inference and simulation of collective sanitary care
 The subfolder ModelInference_Simulation/data contains the sample data from the collective sanitary care experiment with 6 ants. Two of the ants were treated with high fungal load (denoted by 'H' or 'F'), low fungal load ('L' or 'f'), or they were control-treated ('C' or 'Tx'), the remaining four ants were untreated. The sample data contain a single annotated replicate experiment of duration 90 minutes of each treatment group: FF, Ff, ff, FC, fC, CC.  The data contain annotated behavioral states including allogrooming and selfgrooming. The file initial_load_MM_30s.csv contains back-computed initial spore loads of all spore-treated ants using a Michaelis-Menten dynamics. The Michaelis-Menten model parameters were fitted such that the data are consistent with empirical data, as presented in the manuscript.
 
 Note: The individual and group treatments were renamed in the process of developing the code. Some parts of the code in this repository reflect this change. 'F' for high fungal load, in the manuscript correspond to 'H', 'f' (small caps) to 'L', 'C' for control-treated to 'Tx'. The experimental group name is still constructed by combining the letters for the individual treatment (e.g.'HL' changed to 'Ff').
 
-The subfolder ModelInference_Simulation/code contains the main script main_code.m executable in MATLAB_R2016b or later versions with a statistical toolbox. The software has been tested on OS X Yosemite, Version 10.10.5 and on Windows 10. To run the main file add the library minFunc_2012 and the subfolders to the Matlab path. This library, used for the model inference, can be found at: https://www.cs.ubc.ca/~schmidtm/Software/minFunc.html. If necessary, change the paths in the m-file load_libraries, which import these libraries. Locate the file main_code and open it in MATLAB_R2016b or newer versions. Before running the code, select the variable Fpath (line 15) as the path where the folder ModelsInference_Simulation is located. 
+The subfolder ModelInference_Simulation/code contains the main script main_code.m executable in MATLAB_R2016b or later versions with a statistical toolbox. The software has been tested on OS X Yosemite, Version 10.10.5 and on Windows 10. To run the main file library minFunc_2012 and the subfolders need to be added to the Matlab path. If necessary, change the paths in the m-file load_libraries, which import these libraries. Locate the file main_code and open it in MATLAB_R2016b or newer versions. Before running the code, select the variable Fpath (line 15) as the path where the folder ModelsInference_Simulation is located. 
 
-#### System requirements
+### System requirements
 Requirement: MATLAB_R2016b with a statistical toolbox
-Library minFunc_2012 for the model inference, found at: https://www.cs.ubc.ca/~schmidtm/Software/minFunc.html
+Library minFunc_2012 for the model inference
 No particular dependencies on software or operating system
 The software has been tested on OS X Yosemite, Version 10.10.5 and on Windows 10
 The software has been tested with MATLAB_R2017a.
 No required non-standard hardware
 
 
-#### Installation guide
+### Installation guide
 Instructions
 STEP 1:
 Add minFunc_2012 and the subfolders to the Matlab path. This library is used for the model inference. The full library can be found at: https://www.cs.ubc.ca/~schmidtm/Software/minFunc.html. If necessary, change the paths in the m-file load_libraries, which import the libraries needed.
@@ -41,7 +40,7 @@ Run main_code in the folder ModelInference_Simulation/code folder in MATLAB_R201
 Typical install time on a "normal" desktop computer 5 min.
 
 
-#### Instructions to run on data
+### Instructions to run on data
 
 Note: In the data files, we refer to the different individual treatments by 'H' for the high spore load treatment, 'L' for the low load, and 'Tx' for the control treatment (of TritonX only). In the corresponding manuscript, we use 'F' for high fungal load (equivalent to 'H' in the data), 'f' (small caps) for low fungal load (equivalent to 'L' in the data) and 'C' for control (equivalent to 'Tx’).
 
@@ -90,25 +89,25 @@ Expected output:
 - output of the stochastic simulation plotted as a raster plot along with a similar graph for the corresponding experimental data
 
 
-#### Additional instructions for use
+### Additional instructions for use
 The code is capable of running simple examples as well as the complex tasks in the manuscript. To obtain the key results in our manuscript one needs to supply all experimental replicates and set the parameters appropriately.
 
-### Part 2: Exploration-exploitation model. 
+## Part 2: Exploration-exploitation model. 
 The folder “EE_forward_simulation” contains the script and the separate description file explaining the use, the parameters, and the output of the script. 
 
-#### System requirements
+### System requirements
 Requirement: MATLAB_R2016b with a statistical toolbox
 No particular dependencies on software or operating system
 The software has been tested on OS X Yosemite, Version 10.10.5 and on Windows 10
 The software has been tested with MATLAB_R2017a.
 No required non-standard hardware
 
-#### Installation guide
+### Installation guide
 Instructions
 STEP 1:
 Open the file exploration_exploitation in MATLAB_R2016b or newer versions. 
 
-#### Demo
+### Demo
 The code runs the exploration-exploitation model with the main parameters:
 N - number of ants
 NL - number of exposed ants 
