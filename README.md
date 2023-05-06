@@ -93,18 +93,38 @@ Expected output:
 The code is capable of running simple examples as well as the complex tasks in the manuscript. To obtain the key results in our manuscript one needs to supply all experimental replicates and set the parameters appropriately.
 
 ### File description
-Col.m:
-Defines the coloring schemes used in the plots
 
-detailed_states_trace.m:
-Call: Inference_detailed_states_trace
-Computes the detailed frame-by-frame vector of time, state, and load
 
-get_dishstats.m:
-Computes the detailed frame-by-frame vector of performed/received activity, own load, load seen during grooming from the list of grooming events with times.
+
+
+
+
+
+
+main_code.m:
+Runs all three major parts of the code:
+
+1. Loads the experimental data and collects sufficient statistics
+
+2. Based on the statistics computes the transition rates using log-likelihood minimization
+
+3. Uses the inferred rates to generate a stochastic simulation of the ant dish and compares it with the experimental data
+
+### Code labels for part 1
+importfile.m:
+Imports initial loads of all considered ants.
+
+readdish.m:
+Reads the experimental data and stores it into convenient data formats: list of grooming eventsm their durations, loads, table of all grooming states with times organized by event type (allo/self) and ant.
 
 getstate.m:
 Classifies the experimentally recorded states into allo/self grooming
+
+detailed_states_trace.m:
+Computes the necessary statistics in terms of time, state, and load
+
+get_dishstats.m:
+Computes the detailed frame-by-frame vector of performed/received activity, own load, load seen during grooming from the list of grooming events with times.
 
 getstats_0D.m:
 Computes statistics (number of transitions between states, time spent in each state) independent of other variables
@@ -112,8 +132,13 @@ Computes statistics (number of transitions between states, time spent in each st
 getstats_2D.m:
 Computes statistics (number of transitions between states, time spent in each state) with 2D dependence, where the first dependent variable is assumed to be an activity variable while the second one can be a load variable.
 
-importfile.m:
-Imports initial loads of all considered ants.
+### Code labels for part 2
+plotrates.m:
+Plots the inferred rates, computed in part 2 of the main code.
+
+shapeMtoV.m,
+shapeVtoM.m:
+Reshapes the transition rate for the purpose of the inference. One file reshapes them into the input format of the minimization routine, the other reshapes the outcome back to the original dimensions.
 
 Inference_rho.m:
 Infers all model parameters, with the transition rates and the parameter rho.
@@ -130,27 +155,17 @@ Definition of likelihood for the inference dependent on two state variables.
 lik2DR.m:
 Definition of likelihood for the inference dependent on two state variables and parameter rho.
 
+### Code labels for part 3
+- all within the file main_code.m
+- 
+### Auxiliary functions
 load_libraries.m:
 Loads the minFunc library for multidimensional optimization. The paths have to be set appropriately.
 
-main_code.m:
-Runs all three major parts of the code:
+Col.m:
+Defines the coloring schemes used in the plots
 
-1. Loads the experimental data and collects sufficient statistics
 
-2. Based on the statistics computes the transition rates using log-likelihood minimization
-
-3. Uses the inferred rates to generate a stochastic simulation of the ant dish and compares it with the experimental data
-
-plotrates.m:
-Plots the inferred rates, computed in part 2 of the main code.
-
-readdish.m:
-Reads the experimental data and stores it into convenient data formats: list of grooming eventsm their durations, loads, table of all grooming states with times organized by event type (allo/self) and ant.
-
-shapeMtoV.m,
-shapeVtoM.m:
-Reshapes the transition rate for the purpose of the inference. One file reshapes them into the input format of the minimization routine, the other reshapes the outcome back to the original dimensions.
 
 
 
