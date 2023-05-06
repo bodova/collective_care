@@ -92,13 +92,7 @@ Expected output:
 ### Additional instructions for use
 The code is capable of running simple examples as well as the complex tasks in the manuscript. To obtain the key results in our manuscript one needs to supply all experimental replicates and set the parameters appropriately.
 
-### File description
-
-
-
-
-
-
+### File description for the code items
 
 
 main_code.m:
@@ -157,7 +151,7 @@ Definition of likelihood for the inference dependent on two state variables and 
 
 ### Code labels for part 3
 - all within the file main_code.m
-- 
+
 ### Auxiliary functions
 load_libraries.m:
 Loads the minFunc library for multidimensional optimization. The paths have to be set appropriately.
