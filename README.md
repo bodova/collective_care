@@ -109,19 +109,19 @@ importfile.m:
 Imports initial loads of all considered ants.
 
 readdish.m:
-Reads the experimental data and stores it into convenient data formats: list of grooming eventsm their durations, loads, table of all grooming states with times organized by event type (allo/self) and ant.
+Reads the experimental data and stores it into convenient data formats: list of grooming events, their durations, loads, table of all grooming states with times organized by event type (allo/self) and ant.
 
 getstate.m:
-Classifies the experimentally recorded states into allo/self grooming
+Classifies the experimentally recorded states into allo/self grooming.
 
 detailed_states_trace.m:
-Computes the necessary statistics in terms of time, state, and load
+Computes the necessary statistics in terms of time, state, and load.
 
 get_dishstats.m:
 Computes the detailed frame-by-frame vector of performed/received activity, own load, load seen during grooming from the list of grooming events with times.
 
 getstats_0D.m:
-Computes statistics (number of transitions between states, time spent in each state) independent of other variables
+Computes statistics (number of transitions between states, time spent in each state) independent of other variables.
 
 getstats_2D.m:
 Computes statistics (number of transitions between states, time spent in each state) with 2D dependence, where the first dependent variable is assumed to be an activity variable while the second one can be a load variable.
@@ -138,16 +138,16 @@ Inference_rho.m:
 Infers all model parameters, with the transition rates and the parameter rho.
 
 lik0D.m:
-Definition of likelihood for the inference independent of other state variables.
+Definition of likelihood for the inference independent of other factors.
 
 lik1D.m:
-Definition of likelihood for the inference dependent on one state variable.
+Definition of likelihood for the inference dependent on one factor.
 
 lik2D.m:
-Definition of likelihood for the inference dependent on two state variables.
+Definition of likelihood for the inference dependent on two factors.
 
 lik2DR.m:
-Definition of likelihood for the inference dependent on two state variables and parameter rho.
+Definition of likelihood for the inference dependent on two factors and parameter rho.
 
 ### Code labels for part 3
 - all within the file main_code.m
@@ -160,13 +160,9 @@ Col.m:
 Defines the coloring schemes used in the plots
 
 
-
-
-
-
-
 ## Part 2: Exploration-exploitation model. 
 The folder “EE_forward_simulation” contains the script and the separate description file explaining the use, the parameters, and the output of the script. 
+
 
 ### System requirements
 Requirement: MATLAB_R2016b with a statistical toolbox
