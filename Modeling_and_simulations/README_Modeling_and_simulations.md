@@ -1,11 +1,6 @@
-
-collective_care
+# Modeling and simulations
 
 ==================================================================================
- ### Code associated with manuscript results and figures in
-
-Casillas-Pérez B, Boďová K, Grasse AV, Tkačik G, Cremer S.
- **Dynamic pathogen detection and social feedback shape collective hygiene in ants**
 
 1. [Current spore estimation with Michaelis Menten kinetics ](#MM)
 3. [Model inference and simulation](#inference)
