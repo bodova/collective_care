@@ -1,7 +1,7 @@
 # Scripts to wrangle G_all.csv (see Preparation/sampleAnalysis.py) into input for behaviour_aggregated.R
 
 rm(list = ls())
-basedir='~/collective-care/Experimental_analyses/'
+basedir='~/collective_care/Experimental_analyses/'
 setwd(basedir)
 source(paste0(basedir,'aux/load_with_scripts.R'))
 

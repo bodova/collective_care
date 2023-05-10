@@ -9,7 +9,7 @@
 #The expected and observed ratios were computed using python scripts (see Preparation, in this repository).
 
 rm(list = ls())
-basedir='~/collective-care/Experimental_analyses/'
+basedir='~/collective_care/Experimental_analyses/'
 setwd(basedir)
 source(paste0(basedir,'aux/load_with_scripts.R'))
 

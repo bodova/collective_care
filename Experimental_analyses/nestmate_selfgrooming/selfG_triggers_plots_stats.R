@@ -3,7 +3,7 @@
 ## This R script uses the datafile created by 'selfG_triggers.R' named '3m_selfG_triggers.csv' (which can also be directly downloaded from the data repository) to both plot and statistically compare the self grooming after interactions with other spore-, control- or untreated ants. In particular, we test if selfgrooming of a nestmate depends on whether it previously performed or received allogrooming by a spore-treated (F or f, raw labels H or L), control-treated (C, raw label T for individual and Tx for group treatment) or another nestmate (N). For the control individuals, we were further interested, whether it plays a role if they were together in a nest with a spore-treated (C with F or f) or with another control individual (C with C), i.e. in a nest with or without pathogen threat.
 
 rm(list = ls())
-basedir='~/collective-care/Experimental_analyses/'
+basedir='~/collective_care/Experimental_analyses/'
 setwd(basedir)
 
 # LIBRARIES---------------
