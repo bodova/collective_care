@@ -34,8 +34,8 @@ library(effectsize)
 
 TAB<-NULL
 i=0
-#for (var in c("selfG","groomOut","groomIn","gaster")){
-  for (var in c("head")){
+for (var in c("selfG","groomOut","groomIn","gaster","head")){
+
   for (typ in c("F","f","C","N")){
     i=i+1
     xdata$VARPRE<-xdata[[paste0(var,"PRE")]]
