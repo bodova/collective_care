@@ -255,7 +255,7 @@ toc()
 
 final_data<-rbind(case_1_data,case_2_data)
 
-write.csv(final_data,file='./3m_selfG_triggers_head_only.csv', row.names=F)
+write.csv(final_data,file='./3m_selfG_triggers.csv', row.names=F)
 
 # #--------------
 # sessionInfo()

@@ -24,8 +24,6 @@ i=0
 plot_list = list()
 for (this_case in c('case_1', 'case_2')){
   i=i+1
-  df<-read.csv('./data/3m_selfG_triggers_body_only.csv')
-  df<-read.csv('./data/3m_selfG_triggers_head_only.csv')
   df<-read.csv('./data/3m_selfG_triggers.csv')
   df<-df%>%filter(case==this_case)
   #df%>%View()
