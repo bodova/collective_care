@@ -2,11 +2,11 @@
 # collective_care
 
 ==================================================================================
- ### Code associated with manuscript results and figures in
+ ### Code associated results and figures in the manuscript (in revision):
  
 Casillas-Pérez B, Boďová K, Grasse AV, Tkačik G, Cremer S.
  **Dynamic pathogen detection and social feedback shape collective hygiene in ants**
-  
+
 
 1. [Data preparation](#preparation)
 2. [Experimental data analyses](#analyses)
