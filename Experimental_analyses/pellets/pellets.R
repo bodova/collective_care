@@ -1,4 +1,4 @@
-# We here analyse the pellets produced by the groups of ants in dependence of their treatment (Suppl. Fig. 5a), as well as the timeline for observed pellet expulsions for individual ants
+# We here analyse the pellets produced by the groups of ants in dependence of their treatment (Suppl. Fig. 5a), as well as the timeline for observed pellet expulsions for individual nestmates (Suppl. Fig. 5b)
 
 ## Note that only the 5 treatment groups with spore treatments are included, as none of the control (CC) groups produced any pellets 
 
@@ -112,7 +112,7 @@ pell<-subset(pell,numpellet!=1) #exclude first pellet
 
 
 # we look at the grooming nestmates do towards exposed individuals before pellet production
-# we contrast how much grooming it takes for a pellet in first 18 min vs later
+# we contrast how much grooming it takes for a pellet in early and later periods of the experiment 
 library(forcats)
 pell$early<-rep("3")
 pell$early[pell$relframe/(fps*60)<=60]<-"2" 

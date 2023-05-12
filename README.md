@@ -17,7 +17,8 @@ Scripts (Python) to take raw output from behavioral annotation software (Solomon
 
 ## 2. Experimental analyses  <a name="analyses"></a>
 Scripts (R) for the statistical analysis of the experimental data.
-The datasets needed to run these scripts are provided under the ISTA repository XXXXXXXXX. In addition, all source data for the experimental part of the study are provided directly with the publication on the journal's web page.  
+The datasets needed to run these scripts are provided under the ISTA repository https://research-explorer.ista.ac.at/ via https://doi.org/10.15479/AT:ISTA:12945
+In addition, all source data for the experimental part of the study are provided directly with the publication on the journal's web page.  
 
 ## 3. Modeling and simulations  <a name="modeling"></a>
 Scripts (Matlab) and sample data to:

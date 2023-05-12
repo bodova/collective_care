@@ -6,7 +6,7 @@ The libraries used and their versions are appended as a comment at the end of ea
 * Contains code used in several scripts
 
 ## behaviour aggregated
-* Analyses with respect to the difference between mean behavior after-treatment and before-treatment, for selfgrooming (Fig 1b), performed allogrooming (Fig 1c), received allogrooming (Fig 1d), and poison uptake behavior (Suppl Fig 2), grouped by individual treatment.
+* Analyses with respect to the difference between mean behavior after-treatment and before-treatment, for individual hygiene, i.e. selfgrooming and poison uptake behavior, and social sanitary care, i.e. performed and received allogrooming, grouped by individual treatment (Figs 1b-d, Suppl Fig 2, Suppl Table 2). 
 
 ## grooming_bias
 * Analyses the grooming bias nestmates towards the higher-load ant  (Fig 2c), whilst the duration per grooming bout does not change with load or in time (Fig 2d).
